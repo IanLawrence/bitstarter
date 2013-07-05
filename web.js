@@ -8,7 +8,6 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
   console.log('Request to "/" ...');
-  response.contentType('text/html');
   response.send(indexBuffer)
 });
 
